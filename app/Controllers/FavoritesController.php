@@ -10,6 +10,7 @@ class FavoritesController extends BaseController
 {
     public function index()
     {
+        
         $favorites_model = new FavoritesModel();
         $favorites = $favorites_model->findAll();
 

@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class FavoritesModel extends Model
 {
-    protected $table            = 'favorites';
+    protected $table            = 'vtuber';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';

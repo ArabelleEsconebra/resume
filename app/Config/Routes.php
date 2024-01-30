@@ -20,7 +20,7 @@ $routes->post('blog/store', 'BlogController::store');
 $routes->get('blog/edit/(:num)', 'BlogController::edit/$1');
 $routes->post('blog/update/(:num)', 'BlogController::update/$1');
 
-$routes->get('favorites/index', 'FavoritesController::index');
+$routes->get('favorites', 'FavoritesController::index');
 $routes->get('favorites/create', 'FavoritesController::create');
 $routes->post('favorites/store', 'FavoritesController::store');
 $routes->get('favorites/edit/(:num)', 'FavoritesController::edit/$1');
