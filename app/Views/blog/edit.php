@@ -7,7 +7,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #FF7F7F;
+            background-color: #FFcccc;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -18,6 +18,7 @@
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
+            border: 3px solid #7e7e7e7e;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
@@ -69,50 +70,23 @@
             font-family: "Lato", sans-serif;
         }
 
-        .sidenav {
-            width: 130px;
-            position: fixed;
-            z-index: 1;
-            top: 20px;
-            left: 10px;
-            background: #eee;
-            overflow-x: hidden;
-            padding: 8px 0;
-        }
-
-        .sidenav a {
-            padding: 6px 8px 6px 16px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #2196F3;
-            display: block;
-        }
-
-        .sidenav a:hover {      
-            color: #f1f1f1;
-        }
-
-        .main {     
-            margin-left: 160px;
-            font-size: 28px;
-            padding: 0px 10px;
-        }
-
-        @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 18px;}
-        }
     </style>
 
     <title>Blog Edit</title>
 </head>
 <body>
     <div class="container">
-        <h1 class="title has-text-centered is-family-code is-size-1">Blog Edit</h1>
-        <div class="sidenav">
+
+        <li  class="is-family-code is-size-6">
         <a href=<?=base_url('blog') ?>>Index</a>
+        </li>
+
+        <li  class="is-family-code is-size-6">
         <a href=<?=base_url('blog/create') ?>>Create</a>
-    </div>
+        </li>
+
+        <h1 class="title has-text-centered is-family-code is-size-1">Blog Edit</h1>
+
         <div class="form-container">
             <form method="post" action="<?= base_url('blog/update/') . $qwerty["blog_id"]?>">
                 <label for="blog_title">Blog Title:</label>
