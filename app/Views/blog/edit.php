@@ -7,12 +7,13 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #FFcccc;
+            background-color: #ffcccc;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
+        
         .container {
             width: 80%;
             background-color: #fff;
@@ -21,14 +22,7 @@
             border: 3px solid #7e7e7e7e;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-
-        .table-container {
-            position: relative;
-            border: 1px solid #dbdbdb;
-            border-radius: 6px;
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
+        
         .button-container {
             text-align: right;
         }
@@ -64,10 +58,6 @@
         }
         .form-container button:hover {
             background-color: #45a049;
-        }
-
-        body {
-            font-family: "Lato", sans-serif;
         }
 
     </style>
