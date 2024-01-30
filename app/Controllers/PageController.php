@@ -40,10 +40,5 @@ class PageController extends BaseController
     {
         return view("github/index-bulma");
     } 
-    
-    public function post()
-    {
-        return view("github/new_post");
-    }
 
 }
