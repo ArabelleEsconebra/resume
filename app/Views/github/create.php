@@ -69,7 +69,7 @@
     <div class="container">
 
         <li class= "is-family-code is-size-6">
-        <a href=<?=base_url('github') ?>>Index</a>
+        <a href=<?=base_url('favorites') ?>>Index</a>
         </li>
 
         <li class= "is-family-code is-size-6">
