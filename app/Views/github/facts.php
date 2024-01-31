@@ -162,6 +162,7 @@
 
  <!-- ======= Fun Facts Section ======= -->
       <br>
+      <div class="container">
       <div class="section-title">
         <h2>Fun Facts</h2>
         <p>More About Me</p>
@@ -286,6 +287,7 @@
         </div>
 
       </div>
+    </div>
       
       <!-- End Fun Facts Section -->
 

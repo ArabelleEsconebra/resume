@@ -7,8 +7,8 @@
      </div>
 
   <!-- ======= Education Section ======= -->
-    <div class="container">
       <br>
+    <div class="container">
       <div class="section-title">
         <h2>Education</h2>
         <p>Here is My Education</p>
@@ -30,6 +30,7 @@
             </ul>
             </p>
           </div>
+          <br>
 
           <h3 class="education-title">High School</h3>
           <div class="education-item">
@@ -43,6 +44,7 @@
               </ul>
               </p>
           </div>
+          <br>
           <div class="education-item">
             <h4>Don Felix Serra National High School</h4>
             <h5>2014 - 2017</h5>
@@ -66,6 +68,7 @@
             </ul>
             </p>
           </div>
+          <br>
           <div class="education-item">
             <h4>Saint Mary's Integrated School</h4>
             <h5>2008 - 2010</h5>
@@ -75,7 +78,7 @@
               </ul>
             </p>
           </div>
-          
+          <br>
           <h3 class="education-title">Preschool</h3>
           <div class="education-item">
             <h4>Colegio de las Hijas de Jesus</h4>

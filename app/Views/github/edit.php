@@ -7,7 +7,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffcccc;
+            background-color: #ff3c00;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -85,7 +85,7 @@
                 <label for="vtuber_description">Blog Description:</label>
                 <textarea name="vtuber_description" id="vtuber_description"><?= $qwerty["vtuber_description"] ?></textarea>
 
-                <button type="submit" class="button is-primary">Submit</button>
+                <button type="submit" class="has-background-grey-dark">Submit</button>
             </form>
         </div>
     </div>

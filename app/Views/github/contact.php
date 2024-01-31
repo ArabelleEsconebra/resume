@@ -7,8 +7,8 @@
   </div>
  
   <!-- ======= Contact Section ======= -->
-    <div class="container">
       <br>
+    <div class="container">
       <div class="section-title">
         <h2>Contact</h2>
         <p>Contact Details</p>

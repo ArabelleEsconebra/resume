@@ -29,7 +29,7 @@
 
   <style>
     .container {
-  width: 80%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 8px;

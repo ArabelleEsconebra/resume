@@ -12,37 +12,57 @@
     <style>
         .table-container {
             position: relative;
-            border: 1px solid #dbdbdb;
             border-radius: 6px;
             overflow: hidden;
+            margin-left: 10%;
+            margin-right: 10%;
         }
         
         .button-container {
+            padding: 10px 20px;
+            background-color: #ff3c00;
+            color: white;
+            border: 1px solid #C04000;
+            border-radius: 4px;
+            cursor: pointer;
             float: right;
-            bottom: -30px; 
-            right: -30px;
+            margin-right: 10%;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         }
+
+        .table{
+            color: #dbdbdb;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 50px;
+        }
+
+        h1, h3{
+            text-align: center;
+        }
+
+        
     </style>
     
     <br>
-        <div class="container">
-            <h1 class="title has-text-centered is-family-code is-size-1">Oshi List</h1>
-            <h1 class="title has-text-centered is-family-code is-size-3">List of Favorite Vtubers</h1>
+            <h1 class="title">Oshi List</h1>
+            <h3 class="title">List of Favorite Vtubers</h3>
+            <br>
             <div class="table-container">
-                <table class="table is-fullwidth is-hoverable table is-bordered">
+                <table class="table is-fullwidth">
                     <thead>
                         <tr>
-                            <th class="has-text-centered has-background-danger-light is-size-6">NAME</th>
-                            <th class="has-text-centered has-background-danger-light is-size-6">DESCRIPTION</th>
-                            <th class="has-text-centered has-background-danger-light is-size-6">UPDATE DETAILS</th>
+                            <th>NAME</th>
+                            <th>DESCRIPTION</th>
+                            <th>UPDATE DETAILS</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php foreach($favorites as $favorites): ?>
                         <tr>
-                            <td class="has-text-centered"><?= $favorites['vtuber_name'] ?></td>
-                            <td class="has-text-centered"><?= $favorites['vtuber_description'] ?></td>
-                            <td class="has-text-centered">
+                            <td><?= $favorites['vtuber_name'] ?></td>
+                            <td><?= $favorites['vtuber_description'] ?></td>
+                            <td>
                                 <a href="<?= base_url('favorites/edit/') . $favorites['id'] ?>" class="button is-link">Edit</a>
                             </td>
                         </tr>
@@ -51,9 +71,8 @@
                 </table>
             </div>
             <div class="button-container">
-                <a href=<?=base_url('favorites/create') ?> class="button is-primary">Add an Oshi</a>
+                <a href=<?=base_url('favorites/create') ?>>Add an Oshi</a>
             </div>
-        </div>
 
         
   <?= $this->endSection() ?>
