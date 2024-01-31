@@ -20,7 +20,7 @@
           <div class="education-item pb-0">
             <h4>West Visayas State University</h4>
             <h5>2020 - Present</h5>
-            <p><em>Bachelor of Science in Information Technology</em></p>
+            <li><em>Bachelor of Science in Information Technology</em></li>
             <p><em>Major in Network and Information Security</em></p>
             <p>
             <ul>
@@ -35,7 +35,7 @@
           <div class="education-item">
             <h4>Don Felix Serra National High School</h4>
             <h5>2017 - 2020</h5>
-            <p><em>Senior High School</em></p>
+            <li><em>Senior High School</em></li>
             <p>Science, Technology, Engineering and Mathematics Strand</p>
             <p>
               <ul>
@@ -46,7 +46,7 @@
           <div class="education-item">
             <h4>Don Felix Serra National High School</h4>
             <h5>2014 - 2017</h5>
-            <p><em>Junior High School</em></p>
+            <li><em>Junior High School</em></li>
             <p>Science, Technology, and Engineering</p>
             <p>
               <ul>
@@ -92,7 +92,6 @@
       </div>
 
     </div>
-  </section>
   <!-- End Education Section -->
   
   <?= $this->endSection() ?>

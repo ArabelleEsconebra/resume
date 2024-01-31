@@ -5,8 +5,8 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('all', 'PageController::website');
-$routes->get('/', 'PageController::home');
+$routes->get('/', 'PageController::website');
+$routes->get('home', 'PageController::home');
 $routes->get('about', 'PageController::about');
 $routes->get('facts', 'PageController::facts');
 $routes->get('education', 'PageController::education');

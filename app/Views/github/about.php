@@ -6,7 +6,137 @@
      <?= $this->include('github/nav') ?>
      </div>
 
+     <style>
+      /*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about-me .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #ff3c00;
+}
+
+.about-me .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-me .content ul li {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.about-me .content ul strong {
+  margin-right: 10px;
+}
+
+.about-me .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: #ff3c00;
+  line-height: 0;
+}
+
+.about-me .content p{
+  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 40px;
+  text-indent: 50px;
+  text-align: justify;
+}
+
+/*--------------------------------------------------------------
+# Interests
+--------------------------------------------------------------*/
+.interests .icon-box {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: ease-in-out 0.3s;
+}
+
+.interests .icon-box i {
+  font-size: 32px;
+  padding-right: 10px;
+  line-height: 1;
+}
+
+.interests .icon-box h3 {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+  color: #fff;
+}
+
+.interests .icon-box:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+
+/*--------------------------------------------------------------
+# Future
+--------------------------------------------------------------*/
+.future .future-item {
+  box-sizing: content-box;
+  min-height: 320px;
+  width: 50%;
+  margin-left: 20%;
+  margin-top: 50px;
+}
+
+.future .future-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 45px;
+  color: #fff;
+}
+
+.future .future-item h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0 0 0 45px;
+}
+
+.future .future-item .quote-icon-left, .future .future-item .quote-icon-right {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 26px;
+}
+
+.future .future-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.future .future-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  margin-left: 95%;
+}
+
+.future .future-item p {
+  font-style: italic;
+  text-align: justify;
+  margin: 0 15px 0 15px;
+  padding: 20px 20px 20px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  position: relative;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+}
+     </style>
+
     <!-- ======= About Me ======= -->
+    <br>
     <div class="about-me container">
 
       <div class="section-title">
@@ -17,10 +147,11 @@
 
       <div class="row">
         <div class="col-lg-4" data-aos="fade-right">
+          <img src="testing/assets/Pictures/Ara.png" class="img-fluid" alt="">
         </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>4th Year BSIT Student</h3>
-          <p class="fst-italic">
+          <p class="fst-italic has-text-light">
             "I don't know what I am doing, but at least I'm doing something."
           </p>
           <div class="row">
@@ -57,6 +188,7 @@
     <div class="interests container">
 
       <div class="section-title">
+        <br>
         <h2>What I do in my Free Time</h2>
       </div>
 
@@ -140,6 +272,7 @@
     <div class="future container">
 
       <div class="section-title">
+      <br>
         <h2>Where I See Myself in 5 Years</h2>
       </div>
 
@@ -168,6 +301,6 @@
     </div><!-- End Future  -->
 
 
-  </section><!-- End About Section -->
+  <!-- End About Section -->
   
   <?= $this->endSection() ?>

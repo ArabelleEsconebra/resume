@@ -1,7 +1,14 @@
-<html>
-<head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<?= $this->extend('github/layout') ?>
+
+  <?= $this->section('content') ?>
     
+    <div>
+     <?= $this->include('github/nav') ?>
+     </div>
+
+
+    <title>Favorites</title>
+
     <style>
         .table-container {
             position: relative;
@@ -16,11 +23,8 @@
             right: -30px;
         }
     </style>
-
-    <title>Favorites</title>
-</head>
-<body>
-    <section class="section">
+    
+    <br>
         <div class="container">
             <h1 class="title has-text-centered is-family-code is-size-1">Oshi List</h1>
             <h1 class="title has-text-centered is-family-code is-size-3">List of Favorite Vtubers</h1>
@@ -50,6 +54,6 @@
                 <a href=<?=base_url('favorites/create') ?> class="button is-primary">Add an Oshi</a>
             </div>
         </div>
-    </section>
-</body>
-</html>
+
+        
+  <?= $this->endSection() ?>
