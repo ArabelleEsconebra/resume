@@ -11,8 +11,8 @@ class FavoritesController extends BaseController
     public function index()
     {
         
-        $favorites_model = new FavoritesModel();
-        $favorites = $favorites_model->findAll();
+        $favorite_model = new FavoritesModel();
+        $favorites = $favorite_model->findAll();
 
         $array = [
             "favorites" => $favorites,
@@ -28,45 +28,45 @@ class FavoritesController extends BaseController
 
     public function edit($id)
     {
-        $favorites_model = new FavoritesModel();
-        $favorites = $favorites_model->where('id', $id)->first();
+        $favorite_model = new FavoritesModel();
+        $favorite = $favorite_model->where('id', $id)->first();
 
         return view('github/edit', [
             "user_id" => $id,
-            "qwerty" => $favorites,
+            "qwerty" => $favorite,
         ]);
     }
 
     public function store()
     {
-        $vtuber_name = esc($this->request->getPost('vtuber_name'));
-        $vtuber_description = esc($this->request->getPost('vtuber_description'));
+        $vtuber_name = esc($this->request->getPost('vtuber-name'));
+        $vtuber_description = esc($this->request->getPost('vtuber-description'));
 
-        $favorites_data = [
+        $favorite_data = [
             'vtuber_name' => $vtuber_name,
             'vtuber_description' => $vtuber_description,
         ];
 
-        $favorites_model = new FavoritesModel();
-        $favorites_model->insert($favorites_data);
+        $favorite_model = new FavoritesModel();
+        $favorite_model->insert($favorite_data);
 
         return redirect()->back();
     }
 
     public function update($id)
     {
-        $vtuber_name = esc($this->request->getPost('vtuber_name'));
-        $vtuber_description = esc($this->request->getPost('vtuber_description'));
+        $vtuber_name = esc($this->request->getPost('vtuber-name'));
+        $vtuber_description = esc($this->request->getPost('vtuber-description'));
 
-        $favorites_data = [
+        $favorite_data = [
             'vtuber_name' => $vtuber_name,
             'vtuber_description' => $vtuber_description,
         ];
 
-        $favorites_model = new FavoritesModel();
+        $favorite_model = new FavoritesModel();
 
-        $favorites = $favorites_model->where('id', $id)
-            ->set($favorites_data)
+        $favorite = $favorite_model->where('id', $id)
+            ->set($favorite_data)
             ->update();
 
         return redirect()->back();
@@ -74,16 +74,16 @@ class FavoritesController extends BaseController
 
     public function delete($id)
     {
-        $favorites_model = new FavoritesModel();
+        $favorite_model = new FavoritesModel();
 
-        $favorites = $favorites_model->find($id);
+        $favorites = $favorite_model->find($id);
 
         if (!$favorites) {
     
             return redirect()->to('');
         }
 
-        $favorites_model->delete($id, 'id');
+        $favorite_model->delete($id, 'id');
 
         return redirect()->to('');
     }

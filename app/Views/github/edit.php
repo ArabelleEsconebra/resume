@@ -79,11 +79,11 @@
 
         <div class="form-container">
             <form method="post" action="<?= base_url('favorites/update/') . $qwerty["id"]?>">
-                <label for="vtuber_name">Vtuber Name:</label>
-                <input type="text" id="vtuber_name" name="vtuber_name" value="<?= $qwerty["vtuber_name"] ?>">
+                <label for="vtuber-name">Vtuber Name:</label>
+                <input type="text" id="vtuber-name" name="vtuber-name" value="<?= $qwerty["vtuber_name"] ?>">
 
-                <label for="vtuber_description">Blog Description:</label>
-                <textarea name="vtuber_description" id="vtuber_description"><?= $qwerty["vtuber_description"] ?></textarea>
+                <label for="vtuber-description">Blog Description:</label>
+                <textarea name="vtuber-description" id="vtuber-description"><?= $qwerty["vtuber_description"] ?></textarea>
 
                 <button type="submit" class="has-background-grey-dark">Submit</button>
             </form>

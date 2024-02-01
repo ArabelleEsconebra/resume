@@ -80,11 +80,11 @@
 
         <div class="form-container">
         <form method="post" action="<?= base_url('favorites/store') ?>">
-            <label for="vtuber_name">Vtuber Name:</label>
-            <input type="text" id="vtuber_name" name="vtuber_name"><br>
+            <label for="vtuber-name">Vtuber Name:</label>
+            <input type="text" id="vtuber-name" name="vtuber-name"><br>
 
-            <label for="vtuber_description">Describe Your Oshi:</label>
-            <textarea name="vtuber_description" id="vtuber_description"></textarea>
+            <label for="vtuber-description">Describe Your Oshi:</label>
+            <textarea name="vtuber-description" id="vtuber-description"></textarea>
             <button type="submit"  class="has-background-grey-dark">Submit</button>
         </form>
         </div>
