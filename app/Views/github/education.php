@@ -5,6 +5,67 @@
     <div>
      <?= $this->include('github/nav') ?>
      </div>
+     
+
+<style>
+.education, .education-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.education, .education-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+.education, .education-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #ff3c00;
+  margin-bottom: 10px;
+}
+
+.education, .education-item h5 {
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.education, .education-item ul {
+  padding-left: 20px;
+}
+
+.education, .education-item ul li {
+  padding-bottom: 10px;
+}
+
+.education, .education-item:last-child {
+  padding-bottom: 0;
+}
+
+.education, .education-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #ff3c00;
+  border: 2px solid #cc3000;
+}
+</style>
 
   <!-- ======= Education Section ======= -->
       <br>
@@ -20,7 +81,7 @@
           <div class="education-item pb-0">
             <h4>West Visayas State University</h4>
             <h5>2020 - Present</h5>
-            <li><em>Bachelor of Science in Information Technology</em></li>
+            <p><em>Bachelor of Science in Information Technology</em></p>
             <p><em>Major in Network and Information Security</em></p>
             <p>
             <ul>
@@ -36,7 +97,7 @@
           <div class="education-item">
             <h4>Don Felix Serra National High School</h4>
             <h5>2017 - 2020</h5>
-            <li><em>Senior High School</em></li>
+            <p><em>Senior High School</em></p>
             <p>Science, Technology, Engineering and Mathematics Strand</p>
             <p>
               <ul>
@@ -48,7 +109,7 @@
           <div class="education-item">
             <h4>Don Felix Serra National High School</h4>
             <h5>2014 - 2017</h5>
-            <li><em>Junior High School</em></li>
+            <p><em>Junior High School</em></p>
             <p>Science, Technology, and Engineering</p>
             <p>
               <ul>

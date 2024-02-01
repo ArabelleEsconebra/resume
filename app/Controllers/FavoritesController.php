@@ -72,4 +72,20 @@ class FavoritesController extends BaseController
         return redirect()->back();
     }
 
+    public function delete($id)
+    {
+        $favorites_model = new FavoritesModel();
+
+        $favorites = $favorites_model->find($id);
+
+        if (!$favorites) {
+    
+            return redirect()->to('');
+        }
+
+        $favorites_model->delete($id, 'id');
+
+        return redirect()->to('');
+    }
+
 }

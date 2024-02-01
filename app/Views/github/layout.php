@@ -171,17 +171,17 @@ a:hover {
 
 /* Header Top */
 
-#header.header-top h1 {
+#header, .header-top h1 {
   margin-right: auto;
   font-size: 36px;
 }
 
-#header.header-top .container {
+#header, .header-top .container {
   display: flex;
   align-items: center;
 }
 
-#header.header-top .navbar {
+#header, .header-top .navbar {
   margin: 0;
 }
 

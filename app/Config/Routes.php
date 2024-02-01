@@ -25,3 +25,4 @@ $routes->get('favorites/create', 'FavoritesController::create');
 $routes->post('favorites/store', 'FavoritesController::store');
 $routes->get('favorites/edit/(:num)', 'FavoritesController::edit/$1');
 $routes->post('favorites/update/(:num)', 'FavoritesController::update/$1');
+$routes->delete('favorites/delete/(:num)', 'FavoritesController::delete/$1');
